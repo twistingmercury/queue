@@ -1,0 +1,19 @@
+# Changelog
+
+All notable changes to the thread-safe queue package will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [1.0.0] - 2023-06-06
+
+### Added
+- Initial release of the thread-safe queue package.
+- Implemented a generic queue data structure with support for any element type.
+- Provided thread-safe concurrent access to the queue using mutexes.
+- Added `Enqueue`, `Dequeue`, and `Len` methods for queue manipulation.
+- Included unit tests to ensure the correctness of the queue implementation.
+- Created a README file with installation instructions, usage examples, and API documentation.
+- Provided an example `main.go` file demonstrating the usage of the queue with multiple dequeuing goroutines.
+
+[1.0.0]: https://github.com/username/repo/releases/tag/v1.0.0
