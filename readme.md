@@ -4,7 +4,7 @@ This package provides a thread-safe implementation of a queue data structure in 
 
 ## Why tho?
 
- had a small REST API that needed some asynchronous processing, but I didn't want to overcomplicate things by introducing a message broker and a separate worker process. The async tasks weren't complex enough to justify the overhead of creating and deploying an entirely new component.
+ I had a small REST API that needed some asynchronous processing, but I didn't want to overcomplicate things by introducing a message broker and a separate worker process. The async tasks weren't complex enough to justify the overhead of creating and deploying an entirely new component.
 
 To keep things simple, I came up with a solution where the API would push the tasks onto a queue and then send a signal over a channel of type struct{}. On the other end, a worker goroutine would be listening for these signals. Whenever a signal is received, the worker would dequeue an item from the queue and process it accordingly.
 
