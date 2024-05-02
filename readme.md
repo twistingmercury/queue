@@ -1,3 +1,6 @@
+[![Run Tests](https://github.com/twistingmercury/utils/actions/workflows/tests.yml/badge.svg)](https://github.com/twistingmercury/utils/actions/workflows/tests.yml)
+[![codecov](https://codecov.io/gh/twistingmercury/queue/graph/badge.svg?token=3UEQCSUJMJ)](https://codecov.io/gh/twistingmercury/queue)
+[![CodeQL](https://github.com/twistingmercury/utils/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/twistingmercury/utils/actions/workflows/codeql.yml)
 # Thread-Safe Queue
 
 This package provides a thread-safe implementation of a queue data structure in Go. The queue allows multiple goroutines to safely enqueue and dequeue elements concurrently without the risk of race conditions or data corruption.
